@@ -14,7 +14,7 @@ static void do_merge_sort(int arr[], int tem[], int left, int right)
 {
     if (left >= right) return;
     
-    int mid = left + right >> 1;
+    int mid = left + (right - left >> 1);
     do_merge_sort(arr, tem, left, mid);    
     do_merge_sort(arr, tem, mid+1, right);
 
