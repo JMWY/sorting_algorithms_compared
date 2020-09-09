@@ -19,9 +19,9 @@ static void do_quick_sort(int arr[], int left, int right)
 
 	while (tmpLeft < tmpRight) {
 		while (tmpLeft < tmpRight && arr[tmpRight] >= pivot) --tmpRight;
-			arr[tmpLeft] = arr[tmpRight];
+		arr[tmpLeft] = arr[tmpRight];
 		while (tmpLeft < tmpRight && arr[tmpLeft] <= pivot) ++tmpLeft;
-			arr[tmpRight] = arr[tmpLeft];
+		arr[tmpRight] = arr[tmpLeft];
 	}
 	arr[tmpLeft] = pivot;
 	
